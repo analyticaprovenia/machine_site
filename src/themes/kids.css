@@ -1,0 +1,230 @@
+/* ============================================
+   KIDS THEME — yellow, pink, orange, sky blue
+   Fun, bright, playful energy on deep navy
+   ============================================ */
+
+[data-theme="kids"] {
+  --accent:       #ffc300;
+  --accent-light: #ffd966;
+  --orange:       #ff6b35;
+  --pink:         #ff3d9a;
+  --blue:         #00d4ff;
+  --bg:           #04091a;
+}
+
+/* ---- background with colourful glow orbs ---- */
+[data-theme="kids"] body {
+  background: var(--bg);
+  background-image:
+    radial-gradient(ellipse 55% 45% at 5% 0%,   rgba(255,195,0,0.14) 0%, transparent 55%),
+    radial-gradient(ellipse 50% 40% at 95% 10%,  rgba(0,212,255,0.10) 0%, transparent 55%),
+    radial-gradient(ellipse 45% 35% at 50% 100%, rgba(255,61,154,0.10) 0%, transparent 55%),
+    radial-gradient(ellipse 40% 35% at 80% 50%,  rgba(255,107,53,0.08) 0%, transparent 50%);
+  background-attachment: fixed;
+}
+
+/* ---- scrolled nav ---- */
+[data-theme="kids"] [class*="scrolled"] {
+  background: rgba(4, 9, 26, 0.96) !important;
+  box-shadow: 0 2px 30px rgba(255,195,0,0.12) !important;
+}
+
+/* ---- logo ---- */
+[data-theme="kids"] [class*="logo"] span {
+  color: var(--accent);
+  text-shadow: 0 0 14px rgba(255,195,0,0.6), 0 0 30px rgba(255,195,0,0.25);
+}
+
+/* ---- nav CTA ---- */
+[data-theme="kids"] [class*="cta"] {
+  background: linear-gradient(135deg, var(--orange), #e85500) !important;
+  box-shadow: 0 0 14px rgba(255,107,53,0.5), 0 0 28px rgba(255,107,53,0.2);
+}
+
+[data-theme="kids"] [class*="cta"]:hover {
+  background: linear-gradient(135deg, #ff8555, var(--orange)) !important;
+  box-shadow: 0 0 22px rgba(255,107,53,0.6), 0 0 44px rgba(255,107,53,0.3);
+}
+
+/* ---- hero badge → sky blue ---- */
+[data-theme="kids"] [class*="Hero"] [class*="badge"] {
+  background: rgba(0, 212, 255, 0.12) !important;
+  border-color: rgba(0, 212, 255, 0.5) !important;
+  color: var(--blue) !important;
+  text-shadow: 0 0 10px rgba(0,212,255,0.5);
+}
+
+/* ---- hero h1 gradient: yellow → orange → pink ---- */
+[data-theme="kids"] h1 span {
+  background: linear-gradient(135deg, var(--accent), var(--orange) 50%, var(--pink)) !important;
+  -webkit-background-clip: text !important;
+  background-clip: text !important;
+  -webkit-text-fill-color: transparent !important;
+  filter: drop-shadow(0 0 16px rgba(255,107,53,0.3));
+}
+
+/* ---- hero primary button → yellow ---- */
+[data-theme="kids"] [class*="Hero"] [class*="primary"] {
+  background: linear-gradient(135deg, var(--accent), #e6a800) !important;
+  color: #1a0a00 !important;
+  font-weight: 800 !important;
+  box-shadow: 0 0 20px rgba(255,195,0,0.5), 0 0 40px rgba(255,195,0,0.2);
+}
+
+[data-theme="kids"] [class*="Hero"] [class*="primary"]:hover {
+  background: linear-gradient(135deg, var(--accent-light), var(--accent)) !important;
+  box-shadow: 0 0 28px rgba(255,195,0,0.6), 0 0 56px rgba(255,195,0,0.3);
+  transform: translateY(-2px);
+}
+
+/* ---- hero secondary button → sky blue ---- */
+[data-theme="kids"] [class*="Hero"] [class*="secondary"] {
+  border-color: rgba(0, 212, 255, 0.5) !important;
+  color: var(--blue) !important;
+}
+
+[data-theme="kids"] [class*="Hero"] [class*="secondary"]:hover {
+  border-color: var(--blue) !important;
+  color: var(--blue) !important;
+  text-shadow: 0 0 10px rgba(0,212,255,0.6);
+  box-shadow: 0 0 16px rgba(0,212,255,0.2);
+}
+
+/* ---- hero image wrap ---- */
+[data-theme="kids"] [class*="imgWrap"] {
+  border-color: rgba(255,195,0,0.3) !important;
+  box-shadow:
+    0 0 0 1px rgba(255,195,0,0.12),
+    0 0 40px rgba(255,195,0,0.12),
+    0 0 80px rgba(0,212,255,0.07);
+}
+
+/* ---- hero glow orb ---- */
+[data-theme="kids"] [class*="glow"] {
+  background: radial-gradient(circle,
+    rgba(255,195,0,0.22) 0%,
+    rgba(255,107,53,0.12) 40%,
+    rgba(0,212,255,0.06) 70%,
+    transparent 100%) !important;
+}
+
+/* ---- stats ---- */
+[data-theme="kids"] [class*="stat"] strong {
+  background: linear-gradient(135deg, var(--accent), var(--orange));
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* ---- machine section tabs ---- */
+[data-theme="kids"] [class*="activeTab"] {
+  background: linear-gradient(135deg, var(--orange), #e85500) !important;
+  border-color: var(--orange) !important;
+  box-shadow: 0 0 14px rgba(255,107,53,0.5);
+}
+
+[data-theme="kids"] [class*="tabs"] button:hover {
+  border-color: rgba(255,195,0,0.5) !important;
+  color: var(--accent) !important;
+}
+
+/* ---- active thumbnail ---- */
+[data-theme="kids"] [class*="activeThumb"] {
+  border-color: var(--pink) !important;
+  box-shadow: 0 0 12px rgba(255,61,154,0.5);
+}
+
+/* ---- machine section border dividers ---- */
+[data-theme="kids"] [class*="block"] {
+  border-color: rgba(255,195,0,0.07) !important;
+}
+
+/* ---- enquire button → orange ---- */
+[data-theme="kids"] [class*="enquire"] {
+  background: linear-gradient(135deg, var(--orange), #e85500) !important;
+  box-shadow: 0 0 18px rgba(255,107,53,0.5), 0 0 36px rgba(255,107,53,0.2);
+}
+
+[data-theme="kids"] [class*="enquire"]:hover {
+  background: linear-gradient(135deg, #ff8555, var(--orange)) !important;
+  box-shadow: 0 0 26px rgba(255,107,53,0.6), 0 0 52px rgba(255,107,53,0.3);
+  transform: translateY(-2px);
+}
+
+/* ---- why us cards — each a different accent ---- */
+[data-theme="kids"] [class*="card"]:nth-child(1) { border-color: rgba(255,195,0,0.18) !important; }
+[data-theme="kids"] [class*="card"]:nth-child(2) { border-color: rgba(0,212,255,0.15) !important; }
+[data-theme="kids"] [class*="card"]:nth-child(3) { border-color: rgba(255,107,53,0.18) !important; }
+[data-theme="kids"] [class*="card"]:nth-child(4) { border-color: rgba(255,61,154,0.15) !important; }
+[data-theme="kids"] [class*="card"]:nth-child(5) { border-color: rgba(255,195,0,0.18) !important; }
+[data-theme="kids"] [class*="card"]:nth-child(6) { border-color: rgba(0,212,255,0.15) !important; }
+
+[data-theme="kids"] [class*="card"]:nth-child(1):hover { border-color: rgba(255,195,0,0.6) !important; background: rgba(255,195,0,0.05) !important; box-shadow: 0 0 20px rgba(255,195,0,0.1); }
+[data-theme="kids"] [class*="card"]:nth-child(2):hover { border-color: rgba(0,212,255,0.6) !important;  background: rgba(0,212,255,0.05) !important;  box-shadow: 0 0 20px rgba(0,212,255,0.1); }
+[data-theme="kids"] [class*="card"]:nth-child(3):hover { border-color: rgba(255,107,53,0.6) !important; background: rgba(255,107,53,0.05) !important; box-shadow: 0 0 20px rgba(255,107,53,0.1); }
+[data-theme="kids"] [class*="card"]:nth-child(4):hover { border-color: rgba(255,61,154,0.6) !important;  background: rgba(255,61,154,0.05) !important;  box-shadow: 0 0 20px rgba(255,61,154,0.1); }
+[data-theme="kids"] [class*="card"]:nth-child(5):hover { border-color: rgba(255,195,0,0.6) !important;  background: rgba(255,195,0,0.05) !important;  box-shadow: 0 0 20px rgba(255,195,0,0.1); }
+[data-theme="kids"] [class*="card"]:nth-child(6):hover { border-color: rgba(0,212,255,0.6) !important;  background: rgba(0,212,255,0.05) !important;  box-shadow: 0 0 20px rgba(0,212,255,0.1); }
+
+/* ---- why us section header ---- */
+[data-theme="kids"] [class*="header"] h2 {
+  background: linear-gradient(135deg, var(--accent), var(--orange) 50%, var(--pink));
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* ---- contact inputs ---- */
+[data-theme="kids"] input,
+[data-theme="kids"] select,
+[data-theme="kids"] textarea {
+  border-color: rgba(255,195,0,0.18) !important;
+  background: rgba(255,195,0,0.04) !important;
+}
+
+[data-theme="kids"] input:focus,
+[data-theme="kids"] select:focus,
+[data-theme="kids"] textarea:focus {
+  border-color: var(--orange) !important;
+  box-shadow: 0 0 14px rgba(255,107,53,0.22), 0 0 0 1px rgba(255,107,53,0.15) !important;
+}
+
+/* ---- contact submit → pink ---- */
+[data-theme="kids"] [class*="submit"] {
+  background: linear-gradient(135deg, var(--pink), #c2006a) !important;
+  box-shadow: 0 0 18px rgba(255,61,154,0.5), 0 0 36px rgba(255,61,154,0.2);
+}
+
+[data-theme="kids"] [class*="submit"]:hover {
+  background: linear-gradient(135deg, #ff70b8, var(--pink)) !important;
+  box-shadow: 0 0 26px rgba(255,61,154,0.6), 0 0 52px rgba(255,61,154,0.3);
+  transform: translateY(-2px);
+}
+
+/* ---- footer ---- */
+[data-theme="kids"] footer {
+  background: rgba(4, 9, 26, 0.9) !important;
+  border-color: rgba(255,195,0,0.08) !important;
+}
+
+[data-theme="kids"] [class*="bottom"] {
+  border-color: rgba(255,195,0,0.08) !important;
+}
+
+[data-theme="kids"] [class*="Footer"] [class*="logo"] span {
+  color: var(--accent);
+  text-shadow: 0 0 10px rgba(255,195,0,0.5);
+}
+
+/* ---- theme select pill itself ---- */
+[data-theme="kids"] #theme-select {
+  background: rgba(255,195,0,0.1);
+  border-color: rgba(255,195,0,0.45);
+  color: var(--accent);
+  box-shadow: 0 0 10px rgba(255,195,0,0.18);
+}
+
+[data-theme="kids"] #theme-select:hover {
+  background: rgba(255,195,0,0.18);
+  box-shadow: 0 0 16px rgba(255,195,0,0.3);
+}

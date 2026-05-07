@@ -1,0 +1,253 @@
+.block {
+  display: flex;
+  gap: 4rem;
+  align-items: flex-start;
+  padding: 5rem 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  border-bottom: 1px solid rgba(255,255,255,0.06);
+}
+
+.block.reverse {
+  flex-direction: row-reverse;
+}
+
+/* ---- MEDIA SIDE ---- */
+.media {
+  flex: 1;
+  min-width: 0;
+}
+
+.tabs {
+  display: flex;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.tabs button {
+  background: rgba(255,255,255,0.05);
+  border: 1px solid rgba(255,255,255,0.1);
+  color: rgba(255,255,255,0.5);
+  padding: 0.4rem 1.2rem;
+  border-radius: 999px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.tabs button:hover {
+  background: rgba(255,255,255,0.1);
+  color: #fff;
+}
+
+.tabs .activeTab {
+  background: var(--accent);
+  border-color: var(--accent);
+  color: #fff;
+}
+
+/* --- Gallery --- */
+.gallery { display: flex; flex-direction: column; gap: 0.75rem; }
+
+.mainImg {
+  position: relative;
+  border-radius: 16px;
+  overflow: hidden;
+  aspect-ratio: 4/3;
+  background: rgba(255,255,255,0.04);
+  border: 1px solid rgba(255,255,255,0.08);
+}
+
+.mainImg img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.mainImg.noImg img { display: none; }
+
+.imgFallback {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: rgba(255,255,255,0.3);
+  font-size: 0.85rem;
+  text-align: center;
+}
+
+.mainImg:not(.noImg) .imgFallback { display: none; }
+
+.imgFallback code { background: rgba(255,255,255,0.08); padding: 0.1rem 0.4rem; border-radius: 4px; }
+
+.caption {
+  position: absolute;
+  bottom: 0.75rem;
+  left: 0.75rem;
+  background: rgba(0,0,0,0.6);
+  color: rgba(255,255,255,0.85);
+  font-size: 0.75rem;
+  padding: 0.25rem 0.6rem;
+  border-radius: 999px;
+  backdrop-filter: blur(4px);
+}
+
+.thumbs {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.thumb {
+  flex: 1;
+  background: rgba(255,255,255,0.04);
+  border: 1px solid rgba(255,255,255,0.08);
+  border-radius: 10px;
+  overflow: hidden;
+  cursor: pointer;
+  padding: 0;
+  transition: border-color 0.2s;
+  display: flex;
+  flex-direction: column;
+}
+
+.thumb img {
+  width: 100%;
+  aspect-ratio: 4/3;
+  object-fit: cover;
+  display: block;
+}
+
+.thumb span {
+  font-size: 0.7rem;
+  color: rgba(255,255,255,0.4);
+  padding: 0.3rem;
+  text-align: center;
+}
+
+.activeThumb {
+  border-color: var(--accent) !important;
+}
+
+/* --- Video --- */
+.videoWrap {
+  position: relative;
+  border-radius: 16px;
+  overflow: hidden;
+  aspect-ratio: 16/9;
+  background: rgba(255,255,255,0.04);
+  border: 1px solid rgba(255,255,255,0.08);
+}
+
+.videoWrap video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.videoFallback {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: rgba(255,255,255,0.3);
+  font-size: 0.85rem;
+  pointer-events: none;
+}
+
+/* ---- INFO SIDE ---- */
+.info {
+  flex: 1;
+  min-width: 0;
+  padding-top: 0.5rem;
+}
+
+.badge {
+  display: inline-block;
+  font-size: 0.78rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  padding: 0.35rem 1rem;
+  border-radius: 999px;
+  margin-bottom: 1.2rem;
+}
+
+h2 {
+  font-size: clamp(1.5rem, 3vw, 2.2rem);
+  font-weight: 800;
+  color: #fff;
+  line-height: 1.2;
+  margin: 0 0 0.5rem;
+}
+
+.tagline {
+  font-size: 1rem;
+  font-weight: 600;
+  color: rgba(255,255,255,0.55);
+  margin: 0 0 1rem;
+}
+
+.desc {
+  color: rgba(255,255,255,0.65);
+  line-height: 1.75;
+  margin: 0 0 1.75rem;
+  font-size: 0.95rem;
+}
+
+.specs {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.specs li {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  font-size: 0.9rem;
+  color: rgba(255,255,255,0.75);
+  padding: 0.5rem 0;
+  border-bottom: 1px solid rgba(255,255,255,0.06);
+}
+
+.specs li span {
+  min-width: 130px;
+  font-weight: 600;
+  color: rgba(255,255,255,0.45);
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+.enquire {
+  display: inline-block;
+  background: var(--accent);
+  color: #fff;
+  padding: 0.85rem 2rem;
+  border-radius: 999px;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 0.95rem;
+  transition: background 0.2s, transform 0.15s;
+}
+
+.enquire:hover {
+  background: var(--accent-light);
+  transform: translateY(-1px);
+}
+
+@media (max-width: 900px) {
+  .block, .block.reverse {
+    flex-direction: column;
+    padding: 3rem 1.5rem;
+    gap: 2.5rem;
+  }
+}

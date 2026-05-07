@@ -1,0 +1,117 @@
+export const machines = [
+  {
+    id: 'phone-cases',
+    label: 'Phone Case Printing',
+    badgeColor: '#6c63ff',
+    headline: 'Custom Phone Case Printing Kiosk',
+    tagline: 'Personalised cases printed in under 3 minutes.',
+    description:
+      'Let customers design and print a fully custom phone case on the spot. Supports all major phone models — upload photos from their phone or choose from thousands of built-in designs. High-margin retail opportunity for malls, airports, and tourist locations.',
+    specs: [
+      { label: 'Print Time', value: '2–3 minutes per case' },
+      { label: 'Models Supported', value: 'iPhone, Samsung, Pixel & more' },
+      { label: 'Resolution', value: '1440 dpi UV print' },
+      { label: 'Payment', value: 'Card, NFC, QR, Cash' },
+      { label: 'Dimensions', value: '750 × 750 × 1850mm' },
+    ],
+    images: [
+      { src: '/assets/images/yellow_phone_machine.jpg', caption: 'Yellow Edition' },
+      { src: '/assets/images/red_phone_machine.jpg', caption: 'Red Edition' },
+      { src: '/assets/images/hero_candidate_20260421.webp', caption: 'In a Mall' },
+    ],
+    video: '/assets/videos/phone-case.mp4',
+    videoPoster: '/assets/phone-case-thumb.jpg',
+  },
+  {
+    id: 'protein',
+    label: 'Protein Shakes',
+    badgeColor: '#00b894',
+    headline: 'Smart Protein Shake Vending Machine',
+    tagline: 'Custom nutrition, blended fresh on demand.',
+    description:
+      'Serve gym-goers and health-conscious customers fresh, blended protein shakes with their choice of flavour, protein type, and add-ons. Built-in blender, refrigerated ingredients, and portion-accurate dispensing. Perfect for gyms, health clubs, and sports centres.',
+    specs: [
+      { label: 'Blend Time', value: '45–90 seconds' },
+      { label: 'Flavours', value: 'Up to 8 options' },
+      { label: 'Add-ons', value: 'Creatine, collagen, vitamins' },
+      { label: 'Payment', value: 'Card, NFC, QR, Cash' },
+      { label: 'Dimensions', value: '900 × 850 × 1900mm' },
+    ],
+    images: [
+      { src: '/assets/images/protein-shake-vending-equipment.webp', caption: 'Gym Setting' },
+      { src: '/assets/images/GS801-1.webp', caption: 'Machine' },
+      { src: '/assets/images/protein-shake-vending-machine.webp', caption: 'In Venue' },
+    ],
+    video: '/assets/videos/protein.mp4',
+    videoPoster: '/assets/protein-thumb.jpg',
+  },
+  {
+    id: 'cotton-candy',
+    label: 'Cotton Candy',
+    badgeColor: '#e84393',
+    headline: 'Automated Cotton Candy Machine',
+    tagline: 'Fresh spun, every time — no staff required.',
+    description:
+      'Our smart cotton candy vending machines spin fresh, fluffy candy on demand in seconds. Perfect for shopping centres, theme parks, cinemas, and family entertainment venues. Fully automated with touch-screen ordering, multiple flavours, and cashless payment built in.',
+    specs: [
+      { label: 'Output Speed', value: '30–60 seconds per serve' },
+      { label: 'Flavours', value: 'Up to 6 simultaneous' },
+      { label: 'Payment', value: 'Card, NFC, QR, Cash' },
+      { label: 'Power', value: '220V / 2.2kW' },
+      { label: 'Dimensions', value: '800 × 800 × 1900mm' },
+    ],
+    images: [
+      { src: '/assets/images/Commercial-cotton-candy-machine-in-action-at-an-event.webp', caption: 'In Store' },
+      { src: '/assets/images/purple_candy_machine.png', caption: 'Front View' },
+      { src: '/assets/images/big_machine_in_mall.jpeg', caption: 'In a Mall' },
+    ],
+    video: '/assets/videos/cotton-candy.mp4',
+    videoPoster: '/assets/cotton-candy-thumb.jpg',
+  },
+  {
+    id: 'pizza',
+    label: 'Pizza',
+    badgeColor: '#e8521a',
+    headline: 'Fresh Pizza Vending Machine',
+    tagline: 'Hot, fresh pizza — cooked and delivered in 3 minutes.',
+    description:
+      'The ultimate 24/7 food solution. Our pizza vending machines prepare a fresh 30cm pizza from raw ingredients in under 3 minutes. Robotic assembly, infrared baking, refrigerated ingredient storage, and full remote monitoring. Ideal for universities, office parks, hospitals, and transport hubs.',
+    specs: [
+      { label: 'Cook Time', value: '~3 minutes' },
+      { label: 'Capacity', value: 'Up to 72 pizzas per load' },
+      { label: 'Temperature', value: 'Serves at 65°C+' },
+      { label: 'Payment', value: 'Card, NFC, QR, Cash' },
+      { label: 'Dimensions', value: '1100 × 1000 × 1900mm' },
+    ],
+    images: [
+      { src: '/assets/images/81q3gcGvQyL.webp', caption: 'In a Mall' },
+      { src: '/assets/images/918byr32OIL.webp', caption: 'Outdoor Venue' },
+      { src: '/assets/images/pizza_forno_indoor.jpg', caption: 'PizzaForno' },
+    ],
+    video: '/assets/videos/pizza.mp4',
+    videoPoster: '/assets/pizza-thumb.jpg',
+  },
+  {
+    id: 'coffee',
+    label: 'Coffee',
+    badgeColor: '#6d4c41',
+    headline: 'Premium Bean-to-Cup Coffee Machine',
+    tagline: 'Barista quality, zero barista required.',
+    description:
+      'Full bean-to-cup automated coffee machines delivering espresso, flat white, cappuccino, latte, and more. Fresh-ground beans, frothed milk, precise temperature control. High-volume units ideal for offices, petrol stations, airports, hotels, and hospitals.',
+    specs: [
+      { label: 'Brew Time', value: '30–60 seconds' },
+      { label: 'Drinks', value: '12+ menu options' },
+      { label: 'Bean Hopper', value: '1.5kg capacity' },
+      { label: 'Payment', value: 'Card, NFC, QR, Cash' },
+      { label: 'Dimensions', value: '600 × 600 × 1800mm' },
+    ],
+    images: [
+      { src: '/assets/images/coffee_machine_1.jpg', caption: 'Front View' },
+      { src: '/assets/images/coffee_machine_2.jpg', caption: 'Side View' },
+      { src: '/assets/images/coffee_machine_3.jpg', caption: 'Full Kiosk' },
+    ],
+    video: '/assets/videos/coffee.mp4',
+    videoPoster: '/assets/coffee-thumb.jpg',
+  },
+]

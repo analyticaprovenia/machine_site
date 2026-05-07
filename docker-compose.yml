@@ -1,0 +1,7 @@
+services:
+  web:
+    build: .
+    image: machine-site
+    ports:
+      - "80:80"
+    restart: unless-stopped

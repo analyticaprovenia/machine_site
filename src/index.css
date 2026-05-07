@@ -1,0 +1,21 @@
+:root {
+  --accent: #6c63ff;
+  --accent-light: #8b85ff;
+  --bg: #0a0a12;
+}
+
+*, *::before, *::after { box-sizing: border-box; }
+
+html { scroll-behavior: smooth; }
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: rgba(255,255,255,0.85);
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+h1, h2, h3, h4 { margin: 0; }
+p { margin: 0; }
+img { max-width: 100%; display: block; }

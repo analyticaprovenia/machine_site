@@ -1,0 +1,78 @@
+.footer {
+  background: rgba(0,0,0,0.3);
+  border-top: 1px solid rgba(255,255,255,0.06);
+  padding: 3rem 2rem 2rem;
+}
+
+.inner {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.top {
+  display: flex;
+  justify-content: space-between;
+  gap: 3rem;
+  margin-bottom: 2.5rem;
+}
+
+.brand p {
+  color: rgba(255,255,255,0.4);
+  font-size: 0.9rem;
+  max-width: 280px;
+  line-height: 1.6;
+  margin: 0.75rem 0 0;
+}
+
+.logo {
+  font-size: 1.4rem;
+  font-weight: 800;
+  color: #fff;
+}
+
+.logo span { color: var(--accent); }
+
+.nav {
+  display: flex;
+  gap: 3rem;
+}
+
+.col {
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+}
+
+.col strong {
+  font-size: 0.78rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: rgba(255,255,255,0.35);
+  margin-bottom: 0.25rem;
+}
+
+.col a {
+  color: rgba(255,255,255,0.55);
+  text-decoration: none;
+  font-size: 0.9rem;
+  transition: color 0.2s;
+}
+
+.col a:hover { color: #fff; }
+
+.bottom {
+  border-top: 1px solid rgba(255,255,255,0.06);
+  padding-top: 1.5rem;
+}
+
+.bottom p {
+  color: rgba(255,255,255,0.25);
+  font-size: 0.82rem;
+  margin: 0;
+}
+
+@media (max-width: 640px) {
+  .top { flex-direction: column; }
+  .nav { flex-wrap: wrap; gap: 2rem; }
+}

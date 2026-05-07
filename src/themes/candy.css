@@ -1,0 +1,232 @@
+/* ============================================
+   CANDY THEME — neon pink + cyan on dark purple
+   Inspired by sweet cotton candy machine aesthetic
+   ============================================ */
+
+[data-theme="candy"] {
+  --accent:       #ff2d78;
+  --accent-light: #ff6ba8;
+  --cyan:         #00f0ff;
+  --cyan-dim:     rgba(0, 240, 255, 0.15);
+  --pink-glow:    rgba(255, 45, 120, 0.45);
+  --cyan-glow:    rgba(0, 240, 255, 0.35);
+  --bg:           #0e0018;
+}
+
+/* ---- base ---- */
+[data-theme="candy"] body {
+  background: var(--bg);
+  background-image:
+    radial-gradient(ellipse 80% 60% at 10% 0%, rgba(255,45,120,0.12) 0%, transparent 60%),
+    radial-gradient(ellipse 60% 50% at 90% 100%, rgba(0,240,255,0.10) 0%, transparent 60%);
+  background-attachment: fixed;
+}
+
+/* ---- scrolled nav ---- */
+[data-theme="candy"] header {
+  background: rgba(14, 0, 24, 0) !important;
+}
+
+[data-theme="candy"] header.Nav_scrolled__8Hb-U,
+[data-theme="candy"] [class*="scrolled"] {
+  background: rgba(14, 0, 24, 0.95) !important;
+  box-shadow: 0 2px 30px rgba(255, 45, 120, 0.15) !important;
+}
+
+/* ---- logo glow ---- */
+[data-theme="candy"] [class*="logo"] span {
+  color: var(--accent);
+  text-shadow: 0 0 12px var(--pink-glow), 0 0 30px rgba(255,45,120,0.25);
+}
+
+/* ---- nav CTA ---- */
+[data-theme="candy"] [class*="cta"] {
+  background: var(--accent) !important;
+  box-shadow: 0 0 14px var(--pink-glow), 0 0 28px rgba(255,45,120,0.2);
+}
+
+[data-theme="candy"] [class*="cta"]:hover {
+  background: var(--accent-light) !important;
+  box-shadow: 0 0 20px var(--pink-glow), 0 0 40px rgba(255,45,120,0.3);
+}
+
+/* ---- hero badge ---- */
+[data-theme="candy"] [class*="badge"] {
+  background: rgba(0, 240, 255, 0.1) !important;
+  border-color: rgba(0, 240, 255, 0.5) !important;
+  color: var(--cyan) !important;
+  text-shadow: 0 0 8px var(--cyan-glow);
+}
+
+/* ---- hero h1 gradient ---- */
+[data-theme="candy"] h1 span {
+  background: linear-gradient(135deg, var(--cyan), var(--accent)) !important;
+  -webkit-background-clip: text !important;
+  background-clip: text !important;
+  -webkit-text-fill-color: transparent !important;
+  filter: drop-shadow(0 0 12px rgba(255,45,120,0.3));
+}
+
+/* ---- hero primary button ---- */
+[data-theme="candy"] [class*="primary"] {
+  background: linear-gradient(135deg, var(--accent), #c2006a) !important;
+  box-shadow: 0 0 18px var(--pink-glow), 0 0 40px rgba(255,45,120,0.2);
+}
+
+[data-theme="candy"] [class*="primary"]:hover {
+  background: linear-gradient(135deg, var(--accent-light), var(--accent)) !important;
+  box-shadow: 0 0 25px var(--pink-glow), 0 0 50px rgba(255,45,120,0.3);
+  transform: translateY(-2px);
+}
+
+/* ---- hero secondary button ---- */
+[data-theme="candy"] [class*="secondary"] {
+  border-color: rgba(0, 240, 255, 0.4) !important;
+  color: var(--cyan) !important;
+}
+
+[data-theme="candy"] [class*="secondary"]:hover {
+  border-color: var(--cyan) !important;
+  color: var(--cyan) !important;
+  text-shadow: 0 0 8px var(--cyan-glow);
+  box-shadow: 0 0 14px rgba(0,240,255,0.15);
+}
+
+/* ---- hero img wrap ---- */
+[data-theme="candy"] [class*="imgWrap"] {
+  border-color: rgba(255, 45, 120, 0.25) !important;
+  box-shadow:
+    0 0 0 1px rgba(255,45,120,0.15),
+    0 0 40px rgba(255,45,120,0.12),
+    0 0 80px rgba(0,240,255,0.06);
+}
+
+/* ---- glow orb behind hero image ---- */
+[data-theme="candy"] [class*="glow"] {
+  background: radial-gradient(circle,
+    rgba(255,45,120,0.22) 0%,
+    rgba(0,240,255,0.10) 50%,
+    transparent 70%) !important;
+}
+
+/* ---- machine section tabs ---- */
+[data-theme="candy"] [class*="activeTab"] {
+  background: var(--accent) !important;
+  border-color: var(--accent) !important;
+  box-shadow: 0 0 12px var(--pink-glow);
+}
+
+[data-theme="candy"] [class*="tabs"] button:hover {
+  border-color: rgba(255,45,120,0.5) !important;
+  color: var(--accent-light) !important;
+}
+
+/* ---- active thumbnail ---- */
+[data-theme="candy"] [class*="activeThumb"] {
+  border-color: var(--cyan) !important;
+  box-shadow: 0 0 10px var(--cyan-glow);
+}
+
+/* ---- main image container glow ---- */
+[data-theme="candy"] [class*="mainImg"] {
+  box-shadow: 0 0 30px rgba(255,45,120,0.1);
+}
+
+/* ---- enquire button ---- */
+[data-theme="candy"] [class*="enquire"] {
+  background: linear-gradient(135deg, var(--accent), #c2006a) !important;
+  box-shadow: 0 0 16px var(--pink-glow), 0 0 32px rgba(255,45,120,0.18);
+}
+
+[data-theme="candy"] [class*="enquire"]:hover {
+  background: linear-gradient(135deg, var(--accent-light), var(--accent)) !important;
+  box-shadow: 0 0 24px var(--pink-glow), 0 0 48px rgba(255,45,120,0.28);
+  transform: translateY(-2px);
+}
+
+/* ---- why us section ---- */
+[data-theme="candy"] [class*="WhyUs"] section,
+[data-theme="candy"] [class*="section"] {
+  border-color: rgba(255, 45, 120, 0.08) !important;
+}
+
+[data-theme="candy"] [class*="card"] {
+  border-color: rgba(255, 45, 120, 0.12) !important;
+  background: rgba(255, 45, 120, 0.03) !important;
+}
+
+[data-theme="candy"] [class*="card"]:hover {
+  border-color: rgba(0, 240, 255, 0.4) !important;
+  background: rgba(0, 240, 255, 0.05) !important;
+  box-shadow: 0 0 20px rgba(0,240,255,0.08), 0 0 1px rgba(0,240,255,0.3);
+}
+
+[data-theme="candy"] [class*="icon"] {
+  filter: drop-shadow(0 0 6px rgba(255,45,120,0.4));
+}
+
+/* ---- why-us header ---- */
+[data-theme="candy"] [class*="header"] h2 {
+  background: linear-gradient(135deg, #fff 30%, var(--accent-light));
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* ---- contact form inputs ---- */
+[data-theme="candy"] input:focus,
+[data-theme="candy"] select:focus,
+[data-theme="candy"] textarea:focus {
+  border-color: var(--accent) !important;
+  box-shadow: 0 0 12px rgba(255,45,120,0.2), 0 0 0 1px rgba(255,45,120,0.15) !important;
+  outline: none;
+}
+
+[data-theme="candy"] input,
+[data-theme="candy"] select,
+[data-theme="candy"] textarea {
+  border-color: rgba(255, 45, 120, 0.15) !important;
+  background: rgba(255, 45, 120, 0.04) !important;
+}
+
+/* ---- contact submit ---- */
+[data-theme="candy"] [class*="submit"] {
+  background: linear-gradient(135deg, var(--accent), #c2006a) !important;
+  box-shadow: 0 0 16px var(--pink-glow), 0 0 32px rgba(255,45,120,0.18);
+}
+
+[data-theme="candy"] [class*="submit"]:hover {
+  background: linear-gradient(135deg, var(--accent-light), var(--accent)) !important;
+  box-shadow: 0 0 24px var(--pink-glow), 0 0 48px rgba(255,45,120,0.28);
+  transform: translateY(-2px);
+}
+
+/* ---- section borders ---- */
+[data-theme="candy"] [class*="block"] {
+  border-color: rgba(255, 45, 120, 0.06) !important;
+}
+
+/* ---- footer ---- */
+[data-theme="candy"] footer {
+  background: rgba(14, 0, 24, 0.8) !important;
+  border-color: rgba(255, 45, 120, 0.1) !important;
+}
+
+/* ---- section dividers ---- */
+[data-theme="candy"] [class*="bottom"] {
+  border-color: rgba(255, 45, 120, 0.08) !important;
+}
+
+/* ---- theme toggle button itself ---- */
+[data-theme="candy"] #theme-toggle {
+  background: rgba(255, 45, 120, 0.1);
+  border-color: rgba(255, 45, 120, 0.4);
+  color: var(--accent);
+  text-shadow: 0 0 8px var(--pink-glow);
+  box-shadow: 0 0 10px rgba(255,45,120,0.15);
+}
+
+[data-theme="candy"] #theme-toggle:hover {
+  background: rgba(255, 45, 120, 0.2);
+  box-shadow: 0 0 16px var(--pink-glow);
+}
