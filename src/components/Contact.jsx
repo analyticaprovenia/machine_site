@@ -1,7 +1,8 @@
 import { useState } from 'react'
 import styles from './Contact.module.css'
 
-const FORM_ENDPOINT = 'https://formspree.io/f/YOUR_FORM_ID' // replace after creating free Formspree form
+const WEB3FORMS_KEY = import.meta.env.VITE_WEB3FORMS_KEY || ''
+const FORM_ENDPOINT = 'https://api.web3forms.com/submit'
 const RATE_LIMIT = 4
 const STORAGE_KEY = 'enquiry_counts'
 
@@ -45,9 +46,10 @@ export default function Contact({ machines }) {
       const res = await fetch(FORM_ENDPOINT, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json', Accept: 'application/json' },
-        body: JSON.stringify(form),
+        body: JSON.stringify({ access_key: WEB3FORMS_KEY, ...form }),
       })
-      if (res.ok) {
+      const data = await res.json()
+      if (data.success) {
         incrementCount(form.email)
         setSent(true)
       } else {
