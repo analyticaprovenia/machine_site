@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="170" height="48" viewBox="0 0 170 48">
+  <defs>
+    <linearGradient id="accent" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#6c63ff"/>
+      <stop offset="100%" stop-color="#a78bfa"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Icon: V in rounded square -->
+  <rect x="0" y="0" width="48" height="48" rx="12" fill="url(#accent)"/>
+  <polyline
+    points="13,14 24,34 35,14"
+    fill="none"
+    stroke="white"
+    stroke-width="4"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+  />
+
+  <!-- Wordmark -->
+  <text
+    x="60"
+    y="21"
+    font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif"
+    font-size="15"
+    font-weight="800"
+    fill="white"
+    letter-spacing="-0.3"
+  >Vend<tspan fill="#a78bfa">Tech</tspan></text>
+
+  <!-- Tagline -->
+  <text
+    x="61"
+    y="38"
+    font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif"
+    font-size="9.5"
+    font-weight="600"
+    fill="rgba(255,255,255,0.5)"
+    letter-spacing="2.5"
+  >SMART VENDING</text>
+</svg>
