@@ -14,7 +14,7 @@ export default function WhyUs() {
     <section className={styles.section} id="why-us">
       <div className={styles.inner}>
         <div className={styles.header}>
-          <h2>Why Choose VendTech Pro?</h2>
+          <h2>Why Choose VendTechNZ?</h2>
           <p>We handle everything from factory to footpath.</p>
         </div>
         <div className={styles.grid}>

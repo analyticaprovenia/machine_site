@@ -15,7 +15,7 @@ export default function Nav({ machines, theme, setTheme, bg, setBg }) {
     <header className={`${styles.nav} ${scrolled ? styles.scrolled : ''}`}>
       <div className={styles.inner}>
         <a href="#" className={styles.logo}>
-          VendTech<span>Pro</span>
+          VendTech<span>NZ</span>
         </a>
 
         <div className={styles.controls}>

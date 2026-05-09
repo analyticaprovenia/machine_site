@@ -7,7 +7,7 @@ export default function Footer() {
       <div className={styles.inner}>
         <div className={styles.top}>
           <div className={styles.brand}>
-            <div className={styles.logo}>VendTech<span>Pro</span></div>
+            <div className={styles.logo}>VendTech<span>NZ</span></div>
             <p>Premium vending machines, direct from manufacturer to you.</p>
           </div>
           <nav className={styles.nav}>
@@ -25,7 +25,7 @@ export default function Footer() {
           </nav>
         </div>
         <div className={styles.bottom}>
-          <p>© 2026 VendTech Pro. All rights reserved.</p>
+          <p>© 2026 VendTechNZ. All rights reserved.</p>
         </div>
       </div>
     </footer>

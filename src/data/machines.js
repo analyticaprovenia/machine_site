@@ -6,7 +6,7 @@ export const machines = [
     headline: 'Custom Phone Case Printing Kiosk',
     tagline: 'Personalised cases printed in under 3 minutes.',
     description:
-      'Let customers design and print a fully custom phone case on the spot. Supports all major phone models — upload photos from their phone or choose from thousands of built-in designs. High-margin retail opportunity for malls, airports, and tourist locations.',
+      'Let customers design and print a fully custom phone case on the spot. Supports all major phone models — upload photos from their phone or choose from thousands of built-in designs. Already proven across multiple premium NZ locations — our Sylvia Park unit has sold 5,000+ cases and counting. Based in Hamilton\'s premiere retail location. Expect a 3× return on investment within the first year.',
     specs: [
       { label: 'Print Time', value: '2–3 minutes per case' },
       { label: 'Models Supported', value: 'iPhone, Samsung, Pixel & more' },
@@ -29,7 +29,7 @@ export const machines = [
     headline: 'Smart Protein Shake Vending Machine',
     tagline: 'Custom nutrition, blended fresh on demand.',
     description:
-      'Serve gym-goers and health-conscious customers fresh, blended protein shakes with their choice of flavour, protein type, and add-ons. Built-in blender, refrigerated ingredients, and portion-accurate dispensing. Perfect for gyms, health clubs, and sports centres.',
+      'Serve gym-goers and health-conscious customers fresh, blended protein shakes with their choice of flavour, protein type, and add-ons. Built-in blender, refrigerated ingredients, and portion-accurate dispensing. Perfect for gyms, health clubs, and sports centres. Run up to 10 unique custom ads on the screen — managed remotely with easy updates and real-time client monitoring. Ad revenue alone can significantly boost returns, or even become your primary revenue stream.',
     specs: [
       { label: 'Blend Time', value: '45–90 seconds' },
       { label: 'Flavours', value: 'Up to 8 options' },
@@ -52,7 +52,7 @@ export const machines = [
     headline: 'Automated Cotton Candy Machine',
     tagline: 'Fresh spun, every time — no staff required.',
     description:
-      'Our smart cotton candy vending machines spin fresh, fluffy candy on demand in seconds. Perfect for shopping centres, theme parks, cinemas, and family entertainment venues. Fully automated with touch-screen ordering, multiple flavours, and cashless payment built in.',
+      'Our smart cotton candy vending machines spin fresh, fluffy candy on demand in seconds. Perfect for holiday areas, popular kids\' zones, shopping centres, theme parks, cinemas, and family entertainment venues. Fully automated with touch-screen ordering, multiple flavours, and cashless payment built in. Consistent year-round sales with explosive peak season performance — hitting 25+ units per day during school holidays and summer periods.',
     specs: [
       { label: 'Output Speed', value: '30–60 seconds per serve' },
       { label: 'Flavours', value: 'Up to 6 simultaneous' },
