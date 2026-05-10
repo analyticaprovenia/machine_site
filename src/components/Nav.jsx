@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react'
 import styles from './Nav.module.css'
 
-export default function Nav({ machines, theme, setTheme, bg, setBg }) {
+export default function Nav({ machines }) {
   const [scrolled, setScrolled] = useState(false)
   const [menuOpen, setMenuOpen] = useState(false)
 
@@ -27,41 +27,6 @@ export default function Nav({ machines, theme, setTheme, bg, setBg }) {
           </svg>
           VendTech<span>NZ</span>
         </a>
-
-        <div className={styles.controls}>
-          <select
-            id="theme-select"
-            className={styles.themeSelect}
-            value={theme}
-            onChange={e => setTheme(e.target.value)}
-            aria-label="Choose theme"
-          >
-            <option value="dark">🌑 Dark</option>
-            <option value="candy">🍬 Candy</option>
-            <option value="arcade">🕹️ Arcade</option>
-            <option value="kids">🎉 Kids</option>
-            <option value="meta">💼 Meta</option>
-          </select>
-
-          {theme !== 'meta' && (
-            <select
-              id="bg-select"
-              className={styles.themeSelect}
-              value={bg}
-              onChange={e => setBg(e.target.value)}
-              aria-label="Choose background"
-            >
-              <option value="default">🎨 Default BG</option>
-              <option value="midnight">⬛ Midnight</option>
-              <option value="arcade">🎮 Arcade</option>
-              <option value="navy">🌊 Navy</option>
-              <option value="plum">🟣 Plum</option>
-              <option value="forest">🌲 Forest</option>
-              <option value="graphite">🪨 Graphite</option>
-              <option value="ember">🔥 Ember</option>
-            </select>
-          )}
-        </div>
 
         <button className={styles.burger} onClick={() => setMenuOpen(o => !o)} aria-label="Menu">
           <span /><span /><span />

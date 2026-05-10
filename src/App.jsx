@@ -5,6 +5,8 @@ import MachineSection from './components/MachineSection'
 import WhyUs from './components/WhyUs'
 import Contact from './components/Contact'
 import Footer from './components/Footer'
+import AdminLogin from './admin/AdminLogin'
+import AdminPanel from './admin/AdminPanel'
 import { machines } from './data/machines'
 
 const BG_TINTS = {
@@ -18,9 +20,21 @@ const BG_TINTS = {
   ember:    '#130800',
 }
 
+function useHash() {
+  const [hash, setHash] = useState(window.location.hash)
+  useEffect(() => {
+    const onHash = () => setHash(window.location.hash)
+    window.addEventListener('hashchange', onHash)
+    return () => window.removeEventListener('hashchange', onHash)
+  }, [])
+  return hash
+}
+
 export default function App() {
-  const [theme, setTheme] = useState(() => localStorage.getItem('theme') || 'candy')
-  const [bg, setBg]       = useState(() => localStorage.getItem('bg') || 'midnight')
+  const [theme, setTheme] = useState(() => localStorage.getItem('theme') || 'arcade')
+  const [bg, setBg]       = useState(() => localStorage.getItem('bg') || 'arcade')
+  const [authed, setAuthed] = useState(() => sessionStorage.getItem('adminAuth') === 'true')
+  const hash = useHash()
 
   useEffect(() => {
     document.documentElement.setAttribute('data-theme', theme)
@@ -37,9 +51,14 @@ export default function App() {
     localStorage.setItem('bg', bg)
   }, [bg])
 
+  if (hash === '#admin') {
+    if (!authed) return <AdminLogin onLogin={() => setAuthed(true)} />
+    return <AdminPanel theme={theme} setTheme={setTheme} bg={bg} setBg={setBg} />
+  }
+
   return (
     <>
-      <Nav machines={machines} theme={theme} setTheme={setTheme} bg={bg} setBg={setBg} />
+      <Nav machines={machines} />
       <Hero />
       <section id="machines">
         {machines.map((machine, i) => (
