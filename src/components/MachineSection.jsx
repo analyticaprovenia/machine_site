@@ -57,12 +57,14 @@ export default function MachineSection({ machine, reverse }) {
           >
             Photos
           </button>
-          <button
-            className={tab === 'video' ? styles.activeTab : ''}
-            onClick={() => setTab('video')}
-          >
-            Video
-          </button>
+          {machine.video && (
+            <button
+              className={tab === 'video' ? styles.activeTab : ''}
+              onClick={() => setTab('video')}
+            >
+              Video
+            </button>
+          )}
         </div>
         {tab === 'photos'
           ? <ImageGallery images={machine.images} />

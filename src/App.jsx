@@ -10,6 +10,7 @@ import { machines } from './data/machines'
 const BG_TINTS = {
   default:  null,
   midnight: '#08080f',
+  arcade:   '#0a0015',
   navy:     '#000e1a',
   plum:     '#0d0018',
   forest:   '#051209',
@@ -18,8 +19,8 @@ const BG_TINTS = {
 }
 
 export default function App() {
-  const [theme, setTheme] = useState(() => localStorage.getItem('theme') || 'dark')
-  const [bg, setBg]       = useState(() => localStorage.getItem('bg') || 'default')
+  const [theme, setTheme] = useState(() => localStorage.getItem('theme') || 'candy')
+  const [bg, setBg]       = useState(() => localStorage.getItem('bg') || 'midnight')
 
   useEffect(() => {
     document.documentElement.setAttribute('data-theme', theme)

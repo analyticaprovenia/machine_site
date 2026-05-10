@@ -36,9 +36,6 @@ export default function Hero() {
             onLoad={e => { e.currentTarget.style.opacity = '1'; e.currentTarget.previousSibling.style.display = 'none'; }}
             onError={e => { e.currentTarget.style.display = 'none'; e.currentTarget.previousSibling.style.display = 'flex'; }}
           />
-          <div className={styles.logoOverlay}>
-            <img src="/assets/logo.svg" alt="VendTechNZ" className={styles.logoImg} />
-          </div>
         </div>
       </div>
     </section>

@@ -15,6 +15,16 @@ export default function Nav({ machines, theme, setTheme, bg, setBg }) {
     <header className={`${styles.nav} ${scrolled ? styles.scrolled : ''}`}>
       <div className={styles.inner}>
         <a href="#" className={styles.logo}>
+          <svg width="28" height="28" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <defs>
+              <linearGradient id="navG" x1="0%" y1="0%" x2="100%" y2="100%">
+                <stop offset="0%" stopColor="#6c63ff"/>
+                <stop offset="100%" stopColor="#a78bfa"/>
+              </linearGradient>
+            </defs>
+            <rect width="48" height="48" rx="12" fill="url(#navG)"/>
+            <polyline points="13,14 24,34 35,14" stroke="white" strokeWidth="5" strokeLinecap="round" strokeLinejoin="round"/>
+          </svg>
           VendTech<span>NZ</span>
         </a>
 
@@ -28,6 +38,7 @@ export default function Nav({ machines, theme, setTheme, bg, setBg }) {
           >
             <option value="dark">🌑 Dark</option>
             <option value="candy">🍬 Candy</option>
+            <option value="arcade">🕹️ Arcade</option>
             <option value="kids">🎉 Kids</option>
             <option value="meta">💼 Meta</option>
           </select>
@@ -42,6 +53,7 @@ export default function Nav({ machines, theme, setTheme, bg, setBg }) {
             >
               <option value="default">🎨 Default BG</option>
               <option value="midnight">⬛ Midnight</option>
+              <option value="arcade">🎮 Arcade</option>
               <option value="navy">🌊 Navy</option>
               <option value="plum">🟣 Plum</option>
               <option value="forest">🌲 Forest</option>

@@ -1,0 +1,188 @@
+/* ============================================
+   ARCADE THEME — hot pink neon on deep dark purple
+   Palette sampled from Epic Shooter basketball machine
+   ============================================ */
+
+[data-theme="arcade"] {
+  --accent:       #ff1493;
+  --accent-light: #ff4dc4;
+  --blue:         #4400cc;
+  --cyan:         #00d4ff;
+  --pink-glow:    rgba(255, 20, 147, 0.5);
+  --blue-glow:    rgba(68, 0, 204, 0.4);
+  --bg:           #0a0015;
+}
+
+[data-theme="arcade"] body {
+  background: var(--bg);
+  background-image:
+    radial-gradient(ellipse 70% 50% at 15% 0%,   rgba(255,20,147,0.13) 0%, transparent 60%),
+    radial-gradient(ellipse 50% 40% at 85% 100%,  rgba(68,0,204,0.18)   0%, transparent 60%),
+    radial-gradient(ellipse 40% 30% at 50% 50%,   rgba(0,212,255,0.05)  0%, transparent 70%);
+  background-attachment: fixed;
+}
+
+[data-theme="arcade"] header {
+  background: rgba(10, 0, 21, 0) !important;
+}
+
+[data-theme="arcade"] [class*="scrolled"] {
+  background: rgba(10, 0, 21, 0.96) !important;
+  box-shadow: 0 2px 30px rgba(255, 20, 147, 0.2) !important;
+}
+
+[data-theme="arcade"] [class*="logo"] span {
+  color: var(--accent);
+  text-shadow: 0 0 14px var(--pink-glow), 0 0 35px rgba(255,20,147,0.3);
+}
+
+[data-theme="arcade"] [class*="cta"] {
+  background: var(--accent) !important;
+  box-shadow: 0 0 16px var(--pink-glow), 0 0 32px rgba(255,20,147,0.25);
+}
+
+[data-theme="arcade"] [class*="cta"]:hover {
+  background: var(--accent-light) !important;
+  box-shadow: 0 0 24px var(--pink-glow), 0 0 48px rgba(255,20,147,0.35);
+}
+
+[data-theme="arcade"] [class*="badge"] {
+  background: rgba(68, 0, 204, 0.15) !important;
+  border-color: rgba(68, 0, 204, 0.5) !important;
+  color: var(--cyan) !important;
+  text-shadow: 0 0 8px rgba(0,212,255,0.5);
+}
+
+[data-theme="arcade"] h1 span {
+  background: linear-gradient(135deg, var(--accent), var(--blue)) !important;
+  -webkit-background-clip: text !important;
+  background-clip: text !important;
+  -webkit-text-fill-color: transparent !important;
+  filter: drop-shadow(0 0 14px rgba(255,20,147,0.4));
+}
+
+[data-theme="arcade"] [class*="primary"] {
+  background: linear-gradient(135deg, var(--accent), #aa0070) !important;
+  box-shadow: 0 0 20px var(--pink-glow), 0 0 40px rgba(255,20,147,0.2);
+}
+
+[data-theme="arcade"] [class*="primary"]:hover {
+  background: linear-gradient(135deg, var(--accent-light), var(--accent)) !important;
+  box-shadow: 0 0 30px var(--pink-glow), 0 0 60px rgba(255,20,147,0.3);
+  transform: translateY(-2px);
+}
+
+[data-theme="arcade"] [class*="secondary"] {
+  border-color: rgba(68, 0, 204, 0.5) !important;
+  color: var(--cyan) !important;
+}
+
+[data-theme="arcade"] [class*="secondary"]:hover {
+  border-color: var(--cyan) !important;
+  color: var(--cyan) !important;
+  text-shadow: 0 0 8px rgba(0,212,255,0.5);
+  box-shadow: 0 0 14px rgba(0,212,255,0.15);
+}
+
+[data-theme="arcade"] [class*="imgWrap"] {
+  border-color: rgba(255, 20, 147, 0.3) !important;
+  box-shadow:
+    0 0 0 1px rgba(255,20,147,0.18),
+    0 0 50px rgba(255,20,147,0.15),
+    0 0 100px rgba(68,0,204,0.1);
+}
+
+[data-theme="arcade"] [class*="glow"] {
+  background: radial-gradient(circle,
+    rgba(255,20,147,0.28) 0%,
+    rgba(68,0,204,0.15)  50%,
+    transparent 70%) !important;
+}
+
+[data-theme="arcade"] [class*="activeTab"] {
+  background: var(--accent) !important;
+  border-color: var(--accent) !important;
+  box-shadow: 0 0 14px var(--pink-glow);
+}
+
+[data-theme="arcade"] [class*="tabs"] button:hover {
+  border-color: rgba(255,20,147,0.5) !important;
+  color: var(--accent-light) !important;
+}
+
+[data-theme="arcade"] [class*="activeThumb"] {
+  border-color: var(--cyan) !important;
+  box-shadow: 0 0 10px rgba(0,212,255,0.4);
+}
+
+[data-theme="arcade"] [class*="enquire"] {
+  background: linear-gradient(135deg, var(--accent), #aa0070) !important;
+  box-shadow: 0 0 18px var(--pink-glow), 0 0 36px rgba(255,20,147,0.2);
+}
+
+[data-theme="arcade"] [class*="enquire"]:hover {
+  background: linear-gradient(135deg, var(--accent-light), var(--accent)) !important;
+  box-shadow: 0 0 28px var(--pink-glow), 0 0 56px rgba(255,20,147,0.3);
+  transform: translateY(-2px);
+}
+
+[data-theme="arcade"] [class*="card"] {
+  border-color: rgba(255, 20, 147, 0.12) !important;
+  background: rgba(255, 20, 147, 0.03) !important;
+}
+
+[data-theme="arcade"] [class*="card"]:hover {
+  border-color: rgba(68, 0, 204, 0.4) !important;
+  background: rgba(68, 0, 204, 0.06) !important;
+  box-shadow: 0 0 20px rgba(68,0,204,0.1), 0 0 1px rgba(68,0,204,0.3);
+}
+
+[data-theme="arcade"] [class*="icon"] {
+  filter: drop-shadow(0 0 6px rgba(255,20,147,0.45));
+}
+
+[data-theme="arcade"] [class*="header"] h2 {
+  background: linear-gradient(135deg, #fff 30%, var(--accent-light));
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+[data-theme="arcade"] input:focus,
+[data-theme="arcade"] select:focus,
+[data-theme="arcade"] textarea:focus {
+  border-color: var(--accent) !important;
+  box-shadow: 0 0 12px rgba(255,20,147,0.25), 0 0 0 1px rgba(255,20,147,0.2) !important;
+  outline: none;
+}
+
+[data-theme="arcade"] input,
+[data-theme="arcade"] select,
+[data-theme="arcade"] textarea {
+  border-color: rgba(255, 20, 147, 0.15) !important;
+  background: rgba(255, 20, 147, 0.04) !important;
+}
+
+[data-theme="arcade"] [class*="submit"] {
+  background: linear-gradient(135deg, var(--accent), #aa0070) !important;
+  box-shadow: 0 0 18px var(--pink-glow), 0 0 36px rgba(255,20,147,0.2);
+}
+
+[data-theme="arcade"] [class*="submit"]:hover {
+  background: linear-gradient(135deg, var(--accent-light), var(--accent)) !important;
+  box-shadow: 0 0 28px var(--pink-glow), 0 0 56px rgba(255,20,147,0.3);
+  transform: translateY(-2px);
+}
+
+[data-theme="arcade"] [class*="block"] {
+  border-color: rgba(255, 20, 147, 0.06) !important;
+}
+
+[data-theme="arcade"] footer {
+  background: rgba(10, 0, 21, 0.85) !important;
+  border-color: rgba(255, 20, 147, 0.1) !important;
+}
+
+[data-theme="arcade"] [class*="bottom"] {
+  border-color: rgba(255, 20, 147, 0.08) !important;
+}
