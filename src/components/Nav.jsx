@@ -25,7 +25,7 @@ export default function Nav() {
             <rect width="48" height="48" rx="12" fill="url(#navG)"/>
             <polyline points="13,14 24,34 35,14" stroke="white" strokeWidth="5" strokeLinecap="round" strokeLinejoin="round"/>
           </svg>
-          VendTech<span>NZ</span>
+          VendTech<span>NZ</span> — ProShake
         </a>
 
         <button className={styles.burger} onClick={() => setMenuOpen(o => !o)} aria-label="Menu">

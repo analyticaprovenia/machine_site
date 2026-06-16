@@ -75,11 +75,11 @@ export default function Contact() {
             <h3>Talk to Us Directly</h3>
             <div className={styles.infoItem}>
               <span className={styles.infoLabel}>Name</span>
-              <span>Aadil Khatau</span>
+              <span>Andrew Chester</span>
             </div>
             <div className={styles.infoItem}>
               <span className={styles.infoLabel}>Phone</span>
-              <a href="tel:02040291492">02040291492</a>
+              <a href="tel:0221237008">022 123 7008</a>
             </div>
             <p className={styles.infoNote}>Or fill in the form and we'll reach out to you.</p>
           </div>

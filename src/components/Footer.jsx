@@ -6,7 +6,7 @@ export default function Footer() {
       <div className={styles.inner}>
         <div className={styles.top}>
           <div className={styles.brand}>
-            <div className={styles.logo}>VendTech<span>NZ</span></div>
+            <div className={styles.logo}>VendTech<span>NZ</span> — ProShake</div>
             <p>Fresh protein for your members. Revenue for your gym.</p>
           </div>
           <nav className={styles.nav}>
