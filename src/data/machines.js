@@ -1,28 +1,5 @@
 export const machines = [
   {
-    id: 'phone-cases',
-    label: 'Phone Case Printing',
-    badgeColor: '#6c63ff',
-    headline: 'Custom Phone Case Printing Kiosk',
-    tagline: 'Personalised cases printed in under 3 minutes.',
-    description:
-      'Let customers design and print a fully custom phone case on the spot. Supports all major phone models — upload photos from their phone or choose from thousands of built-in designs. Already proven across multiple premium NZ locations — our Sylvia Park unit has sold 5,000+ cases and counting. Based in Hamilton\'s premiere retail location. Expect a 3× return on investment within the first year.',
-    specs: [
-      { label: 'Print Time', value: '2–3 minutes per case' },
-      { label: 'Models Supported', value: 'iPhone, Samsung, Pixel & more' },
-      { label: 'Resolution', value: '1440 dpi UV print' },
-      { label: 'Payment', value: 'Card, NFC, QR, Cash' },
-      { label: 'Dimensions', value: '750 × 750 × 1850mm' },
-    ],
-    images: [
-      { src: '/assets/images/yellow_phone_machine.jpg', caption: 'Yellow Edition' },
-      { src: '/assets/images/red_phone_machine.jpg', caption: 'Red Edition' },
-      { src: '/assets/images/hero_candidate_20260421.webp', caption: 'In a Mall' },
-    ],
-    video: '/assets/videos/phone-case.mp4',
-    videoPoster: '/assets/phone-case-thumb.jpg',
-  },
-  {
     id: 'protein',
     label: 'Protein Shakes',
     badgeColor: '#00b894',
@@ -42,8 +19,14 @@ export const machines = [
       { src: '/assets/images/GS801-1.webp', caption: 'Machine' },
       { src: '/assets/images/protein-shake-vending-machine.webp', caption: 'In Venue' },
     ],
-    video: '/assets/videos/protein.mp4',
-    videoPoster: '/assets/protein-thumb.jpg',
+    videos: [
+      { src: '/assets/videos/protein-1.mp4', label: 'Advertising', poster: '/assets/images/protein-thumb-1.png' },
+      { src: '/assets/videos/protein-2.mp4', label: 'Purchasing', poster: '/assets/images/protein-thumb-2.png' },
+      { src: '/assets/videos/protein-3.mp4', label: 'Machine Working', poster: '/assets/images/protein-thumb-3.png' },
+    ],
+    video: '/assets/videos/protein-1.mp4',
+    videoPoster: '/assets/images/protein-hero.png',
+    videoPortrait: true,
   },
   {
     id: 'cotton-candy',
@@ -67,6 +50,30 @@ export const machines = [
     ],
     video: '/assets/videos/cotton-candy.mp4',
     videoPoster: '/assets/cotton-candy-thumb.jpg',
+    videoComingSoon: true,
+  },
+  {
+    id: 'phone-cases',
+    label: 'Phone Case Printing',
+    badgeColor: '#6c63ff',
+    headline: 'Custom Phone Case Printing Kiosk',
+    tagline: 'Personalised cases printed in under 3 minutes.',
+    description:
+      'Let customers design and print a fully custom phone case on the spot. Supports all major phone models — upload photos from their phone or choose from thousands of built-in designs. Already proven across multiple premium NZ locations — our Sylvia Park unit has sold 5,000+ cases and counting. Based in Hamilton\'s premiere retail location. Expect a 3× return on investment within the first year.',
+    specs: [
+      { label: 'Print Time', value: '2–3 minutes per case' },
+      { label: 'Models Supported', value: 'iPhone, Samsung, Pixel & more' },
+      { label: 'Resolution', value: '1440 dpi UV print' },
+      { label: 'Payment', value: 'Card, NFC, QR, Cash' },
+      { label: 'Dimensions', value: '750 × 750 × 1850mm' },
+    ],
+    images: [
+      { src: '/assets/images/yellow_phone_machine.jpg', caption: 'Yellow Edition' },
+      { src: '/assets/images/red_phone_machine.jpg', caption: 'Red Edition' },
+      { src: '/assets/images/hero_candidate_20260421.webp', caption: 'In a Mall' },
+    ],
+    video: '/assets/videos/phone-case.mp4',
+    videoPoster: '/assets/phone-case-thumb.jpg',
   },
   {
     id: 'game-machines',
