@@ -8,7 +8,8 @@ export const machines = [
     description:
       'Give your members convenient access to fresh protein shakes the moment they finish training. Our machine blends from real ingredients on demand — no pre-bottled shakes, no fridge management, no staff involvement. We stock only high quality protein from trusted suppliers, with the flexibility to substitute for a partner\'s branded product if an advertising or co-branding opportunity arises. The built-in digital screen also runs rotating ads, giving you an additional revenue stream from your existing foot traffic.',
     specs: [
-      { label: 'Space Required', value: '900 × 850mm footprint' },
+      { label: 'Sizes Available', value: 'Compact (700 × 700mm) · Full-size (900 × 850mm)' },
+      { label: 'Space Required', value: 'As little as 0.5m² — fits most gym floors' },
       { label: 'Blend Time', value: '45–90 seconds — fast post-workout' },
       { label: 'Products', value: '4–6 options including pre-workout' },
       { label: 'Payment', value: 'Card, NFC, QR, Cash — no lost sales' },
