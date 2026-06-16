@@ -31,12 +31,7 @@ export default function Hero() {
             <span>🥤</span>
             <p>Add your hero image to<br /><code>public/assets/images/protein-hero.png</code></p>
           </div>
-          <img
-            src="/assets/images/protein-hero.png"
-            alt="Protein Shake Vending Machine"
-            onLoad={e => { e.currentTarget.style.opacity = '1'; e.currentTarget.previousSibling.style.display = 'none'; }}
-            onError={e => { e.currentTarget.style.display = 'none'; e.currentTarget.previousSibling.style.display = 'flex'; }}
-          />
+          <img src="/assets/images/protein-hero.png" alt="Protein Shake Vending Machine" />
         </div>
       </div>
     </section>
