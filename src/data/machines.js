@@ -6,12 +6,13 @@ export const machines = [
     headline: 'Smart Protein Shake Vending Machine',
     tagline: 'Fresh, blended protein — on demand, 24/7.',
     description:
-      'Give your members convenient access to fresh protein shakes the moment they finish training. Our machine blends from real ingredients on demand — no pre-bottled shakes, no fridge management, no staff involvement. The built-in digital screen also runs rotating ads, giving you an additional revenue stream from your existing foot traffic.',
+      'Give your members convenient access to fresh protein shakes the moment they finish training. Our machine blends from real ingredients on demand — no pre-bottled shakes, no fridge management, no staff involvement. We stock only high quality protein from trusted suppliers, with the flexibility to substitute for a partner\'s branded product if an advertising or co-branding opportunity arises. The built-in digital screen also runs rotating ads, giving you an additional revenue stream from your existing foot traffic.',
     specs: [
       { label: 'Space Required', value: '900 × 850mm footprint' },
       { label: 'Blend Time', value: '45–90 seconds — fast post-workout' },
-      { label: 'Flavours', value: 'Up to 8 options' },
+      { label: 'Products', value: '4–6 options including pre-workout' },
       { label: 'Payment', value: 'Card, NFC, QR, Cash — no lost sales' },
+      { label: 'Suppliers', value: 'Premium protein — open to brand partnerships' },
       { label: 'Monitoring', value: 'Real-time remote stock & sales dashboard' },
     ],
     images: [
