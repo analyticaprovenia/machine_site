@@ -31,20 +31,37 @@ function ImageGallery({ images }) {
   )
 }
 
-function VideoPlayer({ src, poster }) {
+function VideoPlayer({ src, poster, videos, portrait }) {
+  const list = videos || (src ? [{ src, label: 'Video' }] : [])
+  const [active, setActive] = useState(0)
+  const current = list[active]
+
+  if (!current) return null
+
   return (
-    <div className={styles.videoWrap}>
-      <video controls poster={poster} key={src}>
-        <source src={src} type="video/mp4" />
+    <div className={`${styles.videoWrap} ${portrait ? styles.videoPortrait : ''}`}>
+      <video controls poster={current.poster || poster} key={current.src}>
+        <source src={current.src} type="video/mp4" />
       </video>
-      <div className={styles.videoFallback}>
-        🎬 Add video to <code>public{src}</code>
-      </div>
+      {list.length > 1 && (
+        <div className={styles.videoTabs}>
+          {list.map((v, i) => (
+            <button
+              key={i}
+              className={i === active ? styles.activeVideoTab : ''}
+              onClick={() => setActive(i)}
+            >
+              {v.label}
+            </button>
+          ))}
+        </div>
+      )}
     </div>
   )
 }
 
 export default function MachineSection({ machine, reverse }) {
+  const hasVideo = machine.videos?.length > 0 || machine.video
   const [tab, setTab] = useState('photos')
 
   return (
@@ -57,7 +74,7 @@ export default function MachineSection({ machine, reverse }) {
           >
             Photos
           </button>
-          {machine.video && (
+          {hasVideo && (
             <button
               className={tab === 'video' ? styles.activeTab : ''}
               onClick={() => setTab('video')}
@@ -68,7 +85,7 @@ export default function MachineSection({ machine, reverse }) {
         </div>
         {tab === 'photos'
           ? <ImageGallery images={machine.images} />
-          : <VideoPlayer src={machine.video} poster={machine.videoPoster} />
+          : <VideoPlayer src={machine.video} poster={machine.videoPoster} videos={machine.videos} portrait={machine.videoPortrait} />
         }
       </div>
 
@@ -76,6 +93,9 @@ export default function MachineSection({ machine, reverse }) {
         <div className={styles.badge} style={{ background: machine.badgeColor + '22', color: machine.badgeColor, border: `1px solid ${machine.badgeColor}55` }}>
           {machine.label}
         </div>
+        {machine.videoComingSoon && (
+          <div className={styles.videoComingSoon}>🎥 New demo video coming soon</div>
+        )}
         <h2>{machine.headline}</h2>
         <p className={styles.tagline}>{machine.tagline}</p>
         <p className={styles.desc}>{machine.description}</p>
