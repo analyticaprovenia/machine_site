@@ -21,11 +21,11 @@ function incrementCount(email) {
   } catch {}
 }
 
-export default function Contact({ machines }) {
+export default function Contact() {
   const [sent, setSent] = useState(false)
   const [error, setError] = useState('')
   const [loading, setLoading] = useState(false)
-  const [form, setForm] = useState({ name: '', email: '', phone: '', machine: '', message: '' })
+  const [form, setForm] = useState({ name: '', email: '', phone: '', gym: '', message: '' })
 
   function handleChange(e) {
     setForm(f => ({ ...f, [e.target.name]: e.target.value }))
@@ -66,13 +66,13 @@ export default function Contact({ machines }) {
     <section className={styles.section} id="contact">
       <div className={styles.inner}>
         <div className={styles.header}>
-          <h2>Get in Touch</h2>
-          <p>Ready to add a machine to your location? We'll get back to you within 24 hours.</p>
+          <h2>Interested in Partnering?</h2>
+          <p>Tell us about your gym and we'll be in touch within 24 hours with a tailored proposal.</p>
         </div>
 
         <div className={styles.layout}>
           <div className={styles.contactInfo}>
-            <h3>Contact Us Directly</h3>
+            <h3>Talk to Us Directly</h3>
             <div className={styles.infoItem}>
               <span className={styles.infoLabel}>Name</span>
               <span>Aadil Khatau</span>
@@ -89,7 +89,7 @@ export default function Contact({ machines }) {
               <div className={styles.success}>
                 <span>✅</span>
                 <h3>Message sent!</h3>
-                <p>Thanks for reaching out. We'll be in touch within 24 hours.</p>
+                <p>Thanks for reaching out. We'll be in touch within 24 hours with a proposal for your gym.</p>
               </div>
             ) : (
               <form className={styles.form} onSubmit={handleSubmit}>
@@ -100,39 +100,33 @@ export default function Contact({ machines }) {
                   </div>
                   <div className={styles.group}>
                     <label htmlFor="email">Email Address</label>
-                    <input id="email" name="email" type="email" placeholder="jane@business.com" required value={form.email} onChange={handleChange} />
+                    <input id="email" name="email" type="email" placeholder="jane@yourgym.co.nz" required value={form.email} onChange={handleChange} />
                   </div>
                 </div>
                 <div className={styles.row}>
                   <div className={styles.group}>
                     <label htmlFor="phone">Phone Number</label>
-                    <input id="phone" name="phone" type="tel" placeholder="+44 7000 000000" value={form.phone} onChange={handleChange} />
+                    <input id="phone" name="phone" type="tel" placeholder="021 000 0000" value={form.phone} onChange={handleChange} />
                   </div>
                   <div className={styles.group}>
-                    <label htmlFor="machine">Machine Interest</label>
-                    <select id="machine" name="machine" value={form.machine} onChange={handleChange}>
-                      <option value="">Select a machine type...</option>
-                      {machines.map(m => (
-                        <option key={m.id} value={m.id}>{m.label}</option>
-                      ))}
-                      <option value="multiple">Multiple / Not Sure</option>
-                    </select>
+                    <label htmlFor="gym">Gym / Club Name</label>
+                    <input id="gym" name="gym" type="text" placeholder="e.g. Les Mills Auckland" value={form.gym} onChange={handleChange} />
                   </div>
                 </div>
                 <div className={styles.group}>
-                  <label htmlFor="message">Message</label>
+                  <label htmlFor="message">About Your Venue</label>
                   <textarea
                     id="message"
                     name="message"
                     rows={4}
-                    placeholder="Tell us about your location, venue type, or any questions you have..."
+                    placeholder="Tell us about your venue — location, approximate member count, and any questions you have about the partnership."
                     value={form.message}
                     onChange={handleChange}
                   />
                 </div>
                 {error && <p className={styles.error}>{error}</p>}
                 <button type="submit" className={styles.submit} disabled={loading}>
-                  {loading ? 'Sending…' : 'Send Enquiry'}
+                  {loading ? 'Sending…' : 'Send Partnership Enquiry'}
                 </button>
               </form>
             )}

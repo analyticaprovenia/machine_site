@@ -1,7 +1,7 @@
 :root {
-  --accent: #6c63ff;
-  --accent-light: #8b85ff;
-  --bg: #0a0a12;
+  --accent: #00b894;
+  --accent-light: #00d4aa;
+  --bg: #070f0c;
 }
 
 *, *::before, *::after { box-sizing: border-box; }

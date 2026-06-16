@@ -1,5 +1,4 @@
 import styles from './Footer.module.css'
-import { machines } from '../data/machines'
 
 export default function Footer() {
   return (
@@ -7,25 +6,21 @@ export default function Footer() {
       <div className={styles.inner}>
         <div className={styles.top}>
           <div className={styles.brand}>
-            <div className={styles.logo}>VendTech<span>NZ</span></div>
-            <p>Premium vending machines, direct from manufacturer to you.</p>
+            <div className={styles.logo}>ProShake<span>NZ</span></div>
+            <p>Fresh protein for your members. Revenue for your gym.</p>
           </div>
           <nav className={styles.nav}>
             <div className={styles.col}>
-              <strong>Machines</strong>
-              {machines.map(m => (
-                <a key={m.id} href={`#${m.id}`}>{m.label}</a>
-              ))}
-            </div>
-            <div className={styles.col}>
-              <strong>Company</strong>
-              <a href="#why-us">Why Us</a>
-              <a href="#contact">Contact</a>
+              <strong>Partnership</strong>
+              <a href="#how-it-works">How It Works</a>
+              <a href="#protein">The Machine</a>
+              <a href="#for-your-gym">For Your Gym</a>
+              <a href="#contact">Partner With Us</a>
             </div>
           </nav>
         </div>
         <div className={styles.bottom}>
-          <p>© 2026 VendTechNZ. All rights reserved.</p>
+          <p>© 2026 ProShake NZ. All rights reserved.</p>
         </div>
       </div>
     </footer>
