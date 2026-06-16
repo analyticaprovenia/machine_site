@@ -8,7 +8,7 @@ export default function Hero() {
         <h1>
           Fresh Protein.<br />
           <span>Extra Revenue.</span><br />
-          Zero Effort.
+          Zero Investment.
         </h1>
         <p>
           We place and operate a smart protein shake vending machine in your gym.

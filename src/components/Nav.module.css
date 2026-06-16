@@ -139,6 +139,7 @@
 }
 
 @media (max-width: 900px) {
+  .logo .sub { display: none; }
   .burger { display: flex; }
 
   .links {
