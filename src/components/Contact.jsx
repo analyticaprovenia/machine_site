@@ -81,6 +81,10 @@ export default function Contact() {
               <span className={styles.infoLabel}>Phone</span>
               <a href="tel:0221237008">022 123 7008</a>
             </div>
+            <div className={styles.infoItem}>
+              <span className={styles.infoLabel}>Email</span>
+              <a href="mailto:chesterandrewj@gmail.com">chesterandrewj@gmail.com</a>
+            </div>
             <p className={styles.infoNote}>Or fill in the form and we'll reach out to you.</p>
           </div>
 
