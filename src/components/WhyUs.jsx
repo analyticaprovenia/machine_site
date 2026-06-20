@@ -5,7 +5,7 @@ const pillars = [
   { icon: '🚢', title: 'Full Import Service', body: 'We manage shipping, customs, and delivery to your door. Completely hassle-free.' },
   { icon: '🔧', title: 'Installation & Training', body: 'Our team installs every machine and trains your staff on operation and maintenance.' },
   { icon: '📡', title: 'Remote Monitoring', body: 'Monitor stock levels, sales, and machine health 24/7 from your phone or computer.' },
-  { icon: '💳', title: 'Modern Payments', body: 'Every machine accepts tap, card, QR code, and cash — no sales lost to payment friction.' },
+  { icon: '💳', title: 'Modern Payments', body: 'Every machine accepts tap, card, and QR code — fast, frictionless checkout for every customer.' },
   { icon: '🛡️', title: 'Warranty & Support', body: '12-month warranty on all machines with ongoing local support and spare parts.' },
 ]
 
