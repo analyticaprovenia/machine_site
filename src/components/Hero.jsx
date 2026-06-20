@@ -1,6 +1,9 @@
+import { useState } from 'react'
 import styles from './Hero.module.css'
 
 export default function Hero() {
+  const [imgState, setImgState] = useState('loading')
+
   return (
     <section className={styles.hero}>
       <div className={styles.content}>
@@ -27,11 +30,20 @@ export default function Hero() {
       <div className={styles.visual}>
         <div className={styles.glow} />
         <div className={styles.imgWrap}>
-          <div className={styles.imgFallback}>
+          <div
+            className={styles.imgFallback}
+            style={imgState === 'loaded' ? { display: 'none' } : imgState === 'error' ? { display: 'flex' } : {}}
+          >
             <span>🥤</span>
             <p>Add your hero image to<br /><code>public/assets/images/protein-hero.png</code></p>
           </div>
-          <img src="/assets/images/protein-hero.png" alt="Protein Shake Vending Machine" />
+          <img
+            src="/assets/images/protein-hero.png"
+            alt="Protein Shake Vending Machine"
+            onLoad={() => setImgState('loaded')}
+            onError={() => setImgState('error')}
+            style={imgState === 'error' ? { display: 'none' } : {}}
+          />
         </div>
       </div>
     </section>
