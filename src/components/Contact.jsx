@@ -74,14 +74,11 @@ export default function Contact({ machines }) {
           <div className={styles.contactInfo}>
             <h3>Contact Us Directly</h3>
             <div className={styles.infoItem}>
-              <span className={styles.infoLabel}>Andrew</span>
+              <span className={styles.infoName}>Andrew</span>
+              <span className={styles.infoName}>Aadil Khatau</span>
             </div>
             <div className={styles.infoItem}>
-              <span className={styles.infoLabel}>Aadil Khatau</span>
               <a href="tel:02040291492">020 4029 1492</a>
-            </div>
-            <div className={styles.infoItem}>
-              <span className={styles.infoLabel}>Email</span>
               <a href="mailto:vendtechnz@gmail.com">vendtechnz@gmail.com</a>
             </div>
             <p className={styles.infoNote}>Or fill in the form and we'll reach out to you.</p>

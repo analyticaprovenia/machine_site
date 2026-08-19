@@ -54,12 +54,10 @@
   gap: 0.25rem;
 }
 
-.infoLabel {
-  font-size: 0.75rem;
-  font-weight: 600;
-  text-transform: uppercase;
-  letter-spacing: 0.05em;
-  color: rgba(255,255,255,0.4);
+.infoName {
+  color: #fff;
+  font-size: 0.95rem;
+  font-weight: 700;
 }
 
 .infoItem span:last-child,
