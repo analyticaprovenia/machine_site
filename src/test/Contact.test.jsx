@@ -39,11 +39,17 @@ describe('Contact form', () => {
 
   it('shows both contacts with phone and email', () => {
     render(<Contact machines={machines} />)
-    expect(screen.getByText('Andrew Chester')).toBeInTheDocument()
-    expect(screen.getByText('022 123 7008')).toHaveAttribute('href', 'tel:0221237008')
-    expect(screen.getByText('vendtechnz@gmail.com')).toHaveAttribute('href', 'mailto:vendtechnz@gmail.com')
+    expect(screen.getByText('Andrew')).toBeInTheDocument()
     expect(screen.getByText('Aadil Khatau')).toBeInTheDocument()
     expect(screen.getByText('020 4029 1492')).toHaveAttribute('href', 'tel:02040291492')
+    expect(screen.getByText('vendtechnz@gmail.com')).toHaveAttribute('href', 'mailto:vendtechnz@gmail.com')
+  })
+
+  it('does not expose the personal surname or phone number', () => {
+    render(<Contact machines={machines} />)
+    expect(screen.queryByText(/Chester/i)).toBeNull()
+    expect(screen.queryByText('022 123 7008')).toBeNull()
+    expect(document.querySelector('a[href="tel:0221237008"]')).toBeNull()
   })
 
   it('shows success message after successful submission', async () => {
