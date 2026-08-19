@@ -41,7 +41,7 @@ describe('Contact form', () => {
     render(<Contact machines={machines} />)
     expect(screen.getByText('Andrew Chester')).toBeInTheDocument()
     expect(screen.getByText('022 123 7008')).toHaveAttribute('href', 'tel:0221237008')
-    expect(screen.getByText('chesterandrewj@gmail.com')).toHaveAttribute('href', 'mailto:chesterandrewj@gmail.com')
+    expect(screen.getByText('vendtechnz@gmail.com')).toHaveAttribute('href', 'mailto:vendtechnz@gmail.com')
     expect(screen.getByText('Aadil Khatau')).toBeInTheDocument()
     expect(screen.getByText('020 4029 1492')).toHaveAttribute('href', 'tel:02040291492')
   })

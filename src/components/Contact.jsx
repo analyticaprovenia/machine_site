@@ -79,7 +79,7 @@ export default function Contact({ machines }) {
             </div>
             <div className={styles.infoItem}>
               <span className={styles.infoLabel}>Email</span>
-              <a href="mailto:chesterandrewj@gmail.com">chesterandrewj@gmail.com</a>
+              <a href="mailto:vendtechnz@gmail.com">vendtechnz@gmail.com</a>
             </div>
             <div className={styles.infoItem}>
               <span className={styles.infoLabel}>Aadil Khatau</span>
