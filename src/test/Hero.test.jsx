@@ -24,7 +24,7 @@ describe('Hero', () => {
 
   it('reveals the image once it loads', () => {
     render(<Hero />)
-    const img = screen.getByAltText(/smart vending machine/i)
+    const img = screen.getByAltText(/cotton candy vending machine/i)
     expect(img.style.opacity).toBe('0')
     fireEvent.load(img)
     expect(img.style.opacity).toBe('1')
@@ -32,7 +32,7 @@ describe('Hero', () => {
 
   it('hides the image and shows fallback on image error', () => {
     render(<Hero />)
-    const img = screen.getByAltText(/smart vending machine/i)
+    const img = screen.getByAltText(/cotton candy vending machine/i)
     const fallback = img.previousSibling
     fireEvent.error(img)
     expect(img.style.display).toBe('none')

@@ -37,8 +37,8 @@ export default function Hero() {
             <p>Add your hero image to<br /><code>public/assets/images/</code></p>
           </div>
           <img
-            src="/assets/images/H25eeaf30b7044c5a8cab6867939c2979B.png_300x300.webp"
-            alt="Smart Vending Machine"
+            src="/assets/images/Commercial-cotton-candy-machine-in-action-at-an-event.webp"
+            alt="Automated cotton candy vending machine"
             onLoad={() => setImgState('loaded')}
             onError={() => setImgState('error')}
             style={{
