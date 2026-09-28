@@ -20,10 +20,11 @@ export const machines = [
       { src: '/assets/images/big_machine_in_mall.jpeg', caption: 'In a Mall' },
     ],
     videos: [
-      { src: '/videos/chipmunks-candy.mp4', label: 'At Chipmunks', poster: '/assets/images/chipmunks-candy-thumb.jpg' },
+      { src: '/videos/chipmunks-candy-short.mp4', label: 'Highlights', poster: '/assets/images/chipmunks-candy-short-thumb.jpg' },
+      { src: '/videos/chipmunks-candy.mp4', label: 'Full Serve', poster: '/assets/images/chipmunks-candy-thumb.jpg' },
     ],
-    video: '/videos/chipmunks-candy.mp4',
-    videoPoster: '/assets/images/chipmunks-candy-thumb.jpg',
+    video: '/videos/chipmunks-candy-short.mp4',
+    videoPoster: '/assets/images/chipmunks-candy-short-thumb.jpg',
     videoPortrait: true,
   },
   {
