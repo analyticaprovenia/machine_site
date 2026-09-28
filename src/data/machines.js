@@ -19,8 +19,12 @@ export const machines = [
       { src: '/assets/images/purple_candy_machine.png', caption: 'Front View' },
       { src: '/assets/images/big_machine_in_mall.jpeg', caption: 'In a Mall' },
     ],
-    video: null,
-    videoPoster: null,
+    videos: [
+      { src: '/videos/chipmunks-candy.mp4', label: 'At Chipmunks', poster: '/assets/images/chipmunks-candy-thumb.jpg' },
+    ],
+    video: '/videos/chipmunks-candy.mp4',
+    videoPoster: '/assets/images/chipmunks-candy-thumb.jpg',
+    videoPortrait: true,
   },
   {
     id: 'protein',
